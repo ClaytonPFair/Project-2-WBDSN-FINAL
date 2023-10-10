@@ -1,31 +1,134 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
+
 <head>
-  <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Responsive Layouts</title>
+<meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+<link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+
+
+<meta name="theme-color" content="#fafafa">
+<style>
+body {
+font-family: "Lato", sans-serif;
+}
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+</style>
+
+
 </head>
-
 <body>
-  <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
-  <script src="js/main.js"></script>
+
+
+<div id="Hamburger" class="sidebar">
+<a href="javascript:void(0)" class="closeBurger" onclick="closeNav()">×</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Clients</a>
+<a href="#">Contact</a>
+</div>
+
+
+<div id="wholeBurger">
+<button class="openBurger" onclick="openNav()">☰</button>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("Hamburger").style.width = "250px";
+document.getElementById("wholeBurger").style.marginLeft = "250px";
+}
+
+
+function closeNav() {
+document.getElementById("Hamburger").style.width = "0";
+document.getElementById("wholeBurger").style.marginLeft= "0";
+}
+</script>
+</style>
+</head>
+<form action="action_page.php">
+</form>
+<body>
+<div class="container">
+<h1><div id="row1">Buy our Kermit-flavored AK47's!!!</div></h1>
+<img src="img/original.jpg" alt="">
+<h2><div id="row2">SUBSCRIBE below for updates on new products</h2></div>
+<div class="container" style="background-color:white">
+<input type="text" placeholder="Name" name="name" required>
+<input type="text" placeholder="Email address" name="mail" required>
+<label>
+<input type="checkbox" checked="checked" name="subscribe"> I want emails
+</label>
+</div>
+
+
+<div class="container">
+<input type="submit" value="Subscribe">
+</div>
+<div id="row3">
+<div id="column1">
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+</div>
+<div id="column2">
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+</div>
+<div id="column3">
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+<div id="row2">Sections for Products</div>
+</div>
+</div>
+<div id="row4">
+
+
+</div>
+</div>
+
+
 </body>
 
+
 </html>
+
+
+
